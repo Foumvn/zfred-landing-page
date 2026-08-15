@@ -50,7 +50,17 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border/40 mt-8 pt-8 text-center text-muted-foreground">
+        <div className="border-t border-border/40 mt-8 pt-8 flex flex-col items-center gap-4 text-center text-muted-foreground">
+          <div className="flex items-center gap-3">
+            <img
+              src="/fredtech.png"
+              alt="FredTech"
+              className="h-8 w-auto object-contain"
+              draggable={false}
+            />
+            <span className="text-sm font-medium text-foreground">FredTech</span>
+          </div>
+          <p className="text-sm">Partenaire détenteur de Zfred-Request</p>
           <p>&copy; 2026 Zfred — FredTech. Zfred-Request v1.0.0, tous droits réservés.</p>
         </div>
       </div>
