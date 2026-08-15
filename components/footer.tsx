@@ -51,7 +51,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border/40 mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2026 Zfred — Cosmos Enterprise. Zfred-Request, tous droits réservés.</p>
+          <p>&copy; 2026 Zfred — Cosmos Enterprise. Zfred-Request v1.0.0, tous droits réservés.</p>
         </div>
       </div>
     </footer>
