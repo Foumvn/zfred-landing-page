@@ -59,7 +59,7 @@ export function Footer() {
               draggable={false}
             />
             <img
-              src="/white.png"
+              src="/W.png"
               alt="FredTech"
               className="h-8 w-auto object-contain hidden dark:block"
               draggable={false}
