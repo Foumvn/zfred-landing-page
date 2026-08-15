@@ -55,7 +55,13 @@ export function Footer() {
             <img
               src="/fredtech.png"
               alt="FredTech"
-              className="h-8 w-auto object-contain"
+              className="h-8 w-auto object-contain dark:hidden"
+              draggable={false}
+            />
+            <img
+              src="/white.png"
+              alt="FredTech"
+              className="h-8 w-auto object-contain hidden dark:block"
               draggable={false}
             />
             <span className="text-sm font-medium text-foreground">FredTech</span>
