@@ -55,7 +55,7 @@ export function Footer() {
             <img
               src="/fredtech.png"
               alt="FredTech"
-              className="h-10 w-40 object-contain dark:hidden"
+              className="h-[52px] w-40 object-contain dark:hidden"
               draggable={false}
             />
             <img
