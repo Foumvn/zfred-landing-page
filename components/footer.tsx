@@ -8,8 +8,9 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <ZfredLogo className="mb-4" />
             <p className="text-muted-foreground mb-4 max-w-md">
-              Outil d&apos;abstraction des requêtes SQL par langage naturel. Installez, posez vos
-              questions, recevez du SQL — directement dans votre terminal.
+              Outil d&apos;abstraction des requêtes SQL & NoSQL par langage naturel. Installez,
+              posez vos questions, recevez SQL ou commande NoSQL — directement dans votre
+              terminal.
             </p>
           </div>
 
@@ -44,6 +45,7 @@ export function Footer() {
             <ul className="space-y-2 text-muted-foreground">
               <li>Node.js · ES modules</li>
               <li>PostgreSQL · MySQL · SQLite</li>
+              <li>MongoDB · Redis · Elasticsearch</li>
               <li>Traduction par Mistral AI</li>
               <li>Licence MIT</li>
             </ul>
@@ -66,7 +68,7 @@ export function Footer() {
             />
           </div>
           <p className="text-sm">Partenaire détenteur de Zfred-Request</p>
-          <p>&copy; 2026 Zfred — FredTech. Zfred-Request v1.0.0, tous droits réservés.</p>
+          <p>&copy; 2026 Zfred — FredTech. Zfred-Request v1.1.1, tous droits réservés.</p>
         </div>
       </div>
     </footer>

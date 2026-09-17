@@ -93,8 +93,8 @@ const BentoCard: React.FC<BentoCardProps> = ({ title, value, subtitle, colors, d
 const features = [
   {
     title: "Moteurs de base de données",
-    value: "3",
-    subtitle: "PostgreSQL, MySQL et SQLite supportés via une configuration unique.",
+    value: "6",
+    subtitle: "PostgreSQL, MySQL, SQLite — plus MongoDB, Redis et Elasticsearch, via une configuration unique.",
     colors: ["#1a1a1a", "#2a2a2a", "#1f1f1f"],
     delay: 0.2,
     span: "md:col-span-2",
@@ -109,7 +109,7 @@ const features = [
   },
   {
     title: "Sécurité",
-    value: "SELECT-only",
+    value: "Read-only",
     subtitle: "Lecture seule par défaut. --write pour autoriser les écritures.",
     colors: ["#1c1c1c", "#2c2c2c", "#181818"],
     delay: 0.6,
@@ -118,7 +118,7 @@ const features = [
   {
     title: "Schéma automatique",
     value: "Auto-introspection",
-    subtitle: "Tables, colonnes et exemples de valeurs analysés pour un SQL qui colle à vos données.",
+    subtitle: "Tables, collections, index et exemples de valeurs analysés pour une requête qui colle à vos données.",
     colors: ["#171717", "#272727", "#1b1b1b"],
     delay: 0.8,
     span: "md:col-span-2",
@@ -134,7 +134,7 @@ const features = [
   {
     title: "Traduction par IA",
     value: "Mistral AI",
-    subtitle: "Modèle préconfiguré et testé : vous posez la question, il génère le SQL.",
+    subtitle: "Modèle préconfiguré et testé : vous posez la question, il génère le SQL ou la commande.",
     colors: ["#1a1a1a", "#2a2a2a", "#1f1f1f"],
     delay: 1.2,
     span: "md:col-span-2",
@@ -163,7 +163,7 @@ export function AnimatedFeaturesSection() {
             Pourquoi Zfred-Request ?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Abstraction des requêtes SQL pour les non-spécialistes comme pour les développeurs pressés.
+            Abstraction des requêtes SQL & NoSQL pour les non-spécialistes comme pour les développeurs pressés.
           </p>
         </div>
 

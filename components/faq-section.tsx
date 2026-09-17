@@ -8,17 +8,17 @@ const faqs = [
   {
     question: "Qu'est-ce que Zfred-Request ?",
     answer:
-      "Zfred-Request est un package npm installable en ligne de commande qui traduit vos questions en langage naturel en requêtes SQL, puis les exécute sur votre base de données — PostgreSQL, MySQL ou SQLite — directement depuis le terminal. Le tout sans interface graphique.",
+      "Zfred-Request est un package npm installable en ligne de commande qui traduit vos questions en langage naturel en requêtes SQL ou en commandes NoSQL, puis les exécute sur votre base de données — PostgreSQL, MySQL ou SQLite pour le relationnel, MongoDB, Redis ou Elasticsearch pour le NoSQL — directement depuis le terminal. Le tout sans interface graphique.",
   },
   {
     question: "Faut-il savoir écrire du SQL ?",
     answer:
-      "Non, c'est précisément le but. Vous posez votre question en français (ou dans n'importe quelle autre langue) et l'outil génère le SQL pour vous. Le SQL généré est toujours affiché avant exécution, afin que vous puissiez le vérifier.",
+      "Non, c'est précisément le but. Vous posez votre question en français (ou dans n'importe quelle autre langue) et l'outil génère le SQL ou la commande NoSQL pour vous. La requête générée est toujours affichée avant exécution, afin que vous puissiez la vérifier.",
   },
   {
     question: "Mes données sont-elles en sécurité ?",
     answer:
-      "Oui, par conception. Le mode lecture seule est actif par défaut : toute requête de modification (INSERT, UPDATE, DELETE…) est bloquée sans l'option --write. Vos identifiants sont stockés hors du dépôt de code, dans votre répertoire de configuration local, et le SQL généré est toujours affiché avant d'être exécuté.",
+      "Oui, par conception. Le mode lecture seule est actif par défaut : toute opération de modification (INSERT, UPDATE, DELETE… en SQL ; insert, update, delete, drop… en NoSQL) est bloquée sans l'option --write. Vos identifiants sont stockés hors du dépôt de code, dans votre répertoire de configuration local, et la requête générée est toujours affichée avant d'être exécutée.",
   },
   {
     question: "Quelles langues sont supportées ?",
@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "Quelles bases de données sont supportées ?",
     answer:
-      "PostgreSQL, MySQL et SQLite. Une seule configuration via zfred init : l'outil détecte le moteur, teste la connexion, puis analyse automatiquement le schéma (tables, colonnes, types et exemples de valeurs).",
+      "Relationnel : PostgreSQL, MySQL et SQLite. NoSQL : MongoDB, Redis et Elasticsearch. Une seule configuration via zfred init : l'outil détecte le moteur, teste la connexion, puis analyse automatiquement le schéma (tables, colonnes, collections, index, clés et exemples de valeurs).",
   },
   {
     question: "Comment installer et commencer ?",
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "Puis-je faire des écritures dans la base ?",
     answer:
-      "Oui, mais uniquement de manière explicite. Par défaut tout est en lecture seule ; passez l'option --write pour autoriser les requêtes de modification (INSERT, UPDATE, DELETE). Le SQL est affiché avant chaque exécution.",
+      "Oui, mais uniquement de manière explicite. Par défaut tout est en lecture seule ; passez l'option --write pour autoriser les opérations de modification (INSERT, UPDATE, DELETE en SQL ; insert, update, delete, drop en NoSQL). La requête est affichée avant chaque exécution.",
   },
 ]
 

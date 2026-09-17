@@ -30,18 +30,18 @@ export function HeroSection() {
       <div className="container mx-auto text-center relative z-10 pb-10 sm:pb-14">
         <div className="max-w-4xl mx-auto">
           <p className="text-sm font-medium uppercase tracking-widest text-brand mb-4">
-            SQL en langage naturel, depuis votre terminal
+            SQL & NoSQL en langage naturel, depuis votre terminal
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-balance">
             Posez vos questions.{" "}
-            <span className="text-muted-foreground">Recevez du SQL, exécuté sur votre base.</span>
+            <span className="text-muted-foreground">Recevez SQL ou commande NoSQL, exécutés sur votre base.</span>
           </h2>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             En français, anglais, espagnol ou chinois : Zfred-Request traduit votre question en
-            requête SQL et l&apos;exécute sur votre base de données — PostgreSQL, MySQL ou SQLite —
-            sans quitter le terminal.
+            requête SQL — PostgreSQL, MySQL, SQLite — ou en commande NoSQL — MongoDB, Redis,
+            Elasticsearch — sans quitter le terminal.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

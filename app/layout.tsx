@@ -4,14 +4,14 @@ import "./globals.css"
 import ClientLayout from "./ClientLayout"
 
 export const metadata: Metadata = {
-  title: "Zfred-Request — SQL en langage naturel, dans votre terminal",
+  title: "Zfred-Request — SQL & NoSQL en langage naturel, dans votre terminal",
   description:
-    "Posez vos questions en français, anglais, espagnol, chinois… Zfred-Request les traduit en SQL et exécute sur votre base (PostgreSQL, MySQL, SQLite), directement depuis le terminal.",
-  keywords: ["sql", "nlp", "ai", "database", "cli", "zfred"],
+    "Posez vos questions en français, anglais, espagnol, chinois… Zfred-Request les traduit en SQL ou commande NoSQL et exécute sur votre base (PostgreSQL, MySQL, SQLite, MongoDB, Redis, Elasticsearch), directement depuis le terminal.",
+  keywords: ["sql", "nosql", "mongodb", "redis", "elasticsearch", "nlp", "ai", "database", "cli", "zfred"],
   openGraph: {
-    title: "Zfred-Request — SQL en langage naturel, dans votre terminal",
+    title: "Zfred-Request — SQL & NoSQL en langage naturel, dans votre terminal",
     description:
-      "Traduit vos questions en requêtes SQL et les exécute sur votre base de données, depuis le terminal.",
+      "Traduit vos questions en requêtes SQL ou commandes NoSQL et les exécute sur votre base de données, depuis le terminal.",
     type: "website",
   },
 }

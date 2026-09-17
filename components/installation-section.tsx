@@ -9,7 +9,7 @@ const INSTALL_CMD = "npm install -g zfred-request"
 
 const libraryCode = `import { translate, query } from "zfred-request";
 
-// Traduction seule
+// Traduction seule (SQL ou commande NoSQL selon votre base)
 const sql = await translate("combien d'utilisateurs par ville ?");
 
 // Traduction + exécution (lecture seule)
@@ -143,7 +143,7 @@ export function InstallationSection() {
               <li className="flex items-start gap-3">
                 <TerminalSquare className="h-5 w-5 text-brand flex-shrink-0" />
                 <span>
-                  <code className="text-foreground">translate()</code> : langage naturel → SQL.
+                  <code className="text-foreground">translate()</code> : langage naturel → SQL ou commande NoSQL.
                 </span>
               </li>
               <li className="flex items-start gap-3">

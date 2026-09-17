@@ -13,21 +13,21 @@ const steps = [
     number: "02",
     title: "Configurer",
     command: "zfred init",
-    description: "Un questionnaire interactif : moteur (PostgreSQL, MySQL, SQLite), hôte, accès. La connexion est testée et le schéma de votre base est analysé et enregistré.",
+    description: "Un questionnaire interactif : moteur (PostgreSQL, MySQL, SQLite, MongoDB, Redis, Elasticsearch), hôte, accès. La connexion est testée et le schéma de votre base est analysé et enregistré.",
   },
   {
     number: "03",
     title: "Interroger",
     command: 'zfred "les 5 meilleures notes"',
-    description: "Le SQL généré s'affiche, puis la requête est exécutée immédiatement. Lecture seule par défaut, résultats affichés en tableau.",
+    description: "La requête générée s'affiche (SQL ou commande NoSQL), puis elle est exécutée immédiatement. Lecture seule par défaut, résultats affichés en tableau.",
   },
 ]
 
 const examples = [
   'zfred "sélectionne tous les utilisateurs ayant une note supérieure à 13"',
   'zfred "select all users with a grade above 13"',
-  'zfred "selecciona todos los usuarios con una nota superior a 13"',
-  'zfred "找出成绩高于13的所有用户"',
+  'zfred "dans la collection utilisateurs, tous les documents avec une note supérieure à 13"',
+  'zfred "récupère la valeur de la clé user:1"',
 ]
 
 export function HowItWorksSection() {
