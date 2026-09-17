@@ -5,9 +5,10 @@ import { Button } from "./ui/button"
 import { Copy, TerminalSquare, BookOpen, PackageCheck } from "lucide-react"
 import { useState } from "react"
 
-const INSTALL_CMD = "npm install -g zfred-request"
+const INSTALL_CMD =
+  "npm install -g @foumvn/zfred-request --registry=https://npm.pkg.github.com"
 
-const libraryCode = `import { translate, query } from "zfred-request";
+const libraryCode = `import { translate, query } from "@foumvn/zfred-request";
 
 // Traduction seule (SQL ou commande NoSQL selon votre base)
 const sql = await translate("combien d'utilisateurs par ville ?");
@@ -62,8 +63,8 @@ export function InstallationSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Publié sur npm, open source sous licence MIT. Comptez une minute entre l'installation
-            et votre première requête.
+            Publié sur GitHub Packages, open source sous licence MIT. Comptez une minute
+            entre l'installation et votre première requête.
           </motion.p>
         </div>
 

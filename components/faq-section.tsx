@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Comment installer et commencer ?",
     answer:
-      "Trois étapes : npm install -g zfred-request, puis zfred init pour configurer l'accès à votre base (connexion testée et schéma enregistré), puis zfred \"votre question en langage naturel\". Le résultat s'affiche immédiatement sous forme de tableau.",
+      "Trois étapes : npm install -g @foumvn/zfred-request (depuis GitHub Packages avec votre jeton GitHub), puis zfred init pour configurer l'accès à votre base (connexion testée et schéma enregistré), puis zfred \"votre question en langage naturel\". Le résultat s'affiche immédiatement sous forme de tableau.",
   },
   {
     question: "Puis-je l'utiliser dans mes propres projets ?",

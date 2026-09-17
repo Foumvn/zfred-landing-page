@@ -6,7 +6,8 @@ import { TerminalSquare, Copy, Check } from "lucide-react"
 import { ParticleTextEffect } from "./particle-text-effect"
 import { TerminalDemo } from "./terminal-demo"
 
-const INSTALL_CMD = "npm install -g zfred-request"
+const INSTALL_CMD =
+  "npm install -g @foumvn/zfred-request --registry=https://npm.pkg.github.com"
 
 export function HeroSection() {
   const [copied, setCopied] = useState(false)

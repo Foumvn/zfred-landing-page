@@ -5,7 +5,8 @@ import { Button } from "./ui/button"
 import { Copy, BookOpen, TerminalSquare } from "lucide-react"
 import { BackgroundPaths } from "./ui/floating-paths"
 
-const INSTALL_CMD = "npm install -g zfred-request"
+const INSTALL_CMD =
+  "npm install -g @foumvn/zfred-request --registry=https://npm.pkg.github.com"
 
 export function AnimatedCTASection() {
   const contentRef = useRef<HTMLDivElement>(null)

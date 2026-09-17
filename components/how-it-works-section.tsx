@@ -6,7 +6,7 @@ const steps = [
   {
     number: "01",
     title: "Installer",
-    command: "npm install -g zfred-request",
+    command: "npm install -g @foumvn/zfred-request --registry=https://npm.pkg.github.com",
     description: "Un paquet npm unique, installable en une ligne. Un message de bienvenue s'affiche avec l'identité visuelle de l'outil.",
   },
   {
